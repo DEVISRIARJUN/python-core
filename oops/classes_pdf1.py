@@ -186,27 +186,104 @@
 # •	static method is_eligible(age) → returns True if age ≥ 18
 # Demonstrate enrolling multiple students and show total count.
 
-class Course:
-    total_students = 0
-    def __init__(self,student_name):
-        self.student_name = student_name
-    def enroll(self):
-        Course.total_students = Course.total_students + 1
-    @classmethod
-    def show_total(cls):
-        print(cls.total_students)
-    @staticmethod
-    def is_eligible(age):
-        return age >= 18       
-c1 = Course("Arjun")
-c2 = Course("Nikhil")
-print(c1.student_name)
-c1.enroll()
-print(c2.student_name)
-c2.enroll()
-Course.show_total()
-print(Course.is_eligible(20))
-print(Course.is_eligible(17))
+# class Course:
+#     total_students = 0
+#     def __init__(self,student_name):
+#         self.student_name = student_name
+#     def enroll(self):
+#         Course.total_students = Course.total_students + 1
+#     @classmethod
+#     def show_total(cls):
+#         print(cls.total_students)
+#     @staticmethod
+#     def is_eligible(age):
+#         return age >= 18       
+# c1 = Course("Arjun")
+# c2 = Course("Nikhil")
+# print(c1.student_name)
+# c1.enroll()
+# print(c2.student_name)
+# c2.enroll()
+# Course.show_total()
+# print(Course.is_eligible(20))
+# print(Course.is_eligible(17))
+
+
+
+# Q9. Create a class BankAccount with:
+# •	class variable bank_name
+# •	instance variables holder and balance
+# •	instance method deposit(amount)
+# •	class method change_bank_name(cls, new_name)
+# •	static method validate_amount(amount) → returns True if amount > 0
+# Show transactions and how static + class methods work together.
+
+
+# class BankAccount:
+#     bank_name = "bandhan"
+#     def __init__(self,holder,balance):
+#         self.holder = holder
+#         self.balance = balance
+#     def deposit(self,amount):
+#         self.balance += amount
+#     @classmethod
+#     def change_bank_name(cls,new_name):
+#         cls.bank_name = new_name
+#     @staticmethod
+#     def validate_amount(amount):
+#         return amount > 0
+# acc1 = BankAccount("Arjun",10000)
+# acc1.deposit(1000)
+# BankAccount.change_bank_name("Bank Of India")
+# print(BankAccount.bank_name)
+
+
+# Q10. Create a class Student with:
+# •	class variable passing_marks = 40
+# •	instance attributes name, marks
+# •	instance method result() → prints pass/fail using class variable
+# •	class method update_passing_marks(cls, new_marks)
+# •	static method grade_category(marks) → returns "A", "B", "C" based on score ranges
+# Use all three in a program that:
+# 1.	Creates students
+# 2.	Updates the passing criteria
+# 3.	Displays grade category and result
+
+# class Student:
+#     passing_marks = 40
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+#     def result(self):
+#         if self.marks > Student.passing_marks:
+#             print("pass")
+#         else:
+#             print("fail")
+#     @classmethod
+#     def update_passing(cls,new_marks):
+#         cls.passing_marks = new_marks
+#     @staticmethod
+#     def grade_category(marks):
+#         if marks > 80:
+#             return "A"
+#         elif marks > 70:
+#             return "B"
+#         else:
+#             return "C"
+# s1 = Student("Arjun",36)
+# s1.result()
+
+# Student.update_passing(35)
+# s1.result()
+# print(Student.grade_category(s1.marks))
+
+
+
+
+
+
+
+    
 
 
 
