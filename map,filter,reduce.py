@@ -60,10 +60,10 @@
 # k = sorted(n,key=len)
 # print(k)
 
-# from functools import reduce
-# num = [1,2,3,4,5,6,7,8,90,10]
-# result = reduce(lambda x,y : x+y,filter(lambda x : x % 5 == 0,map(lambda x : x * 7,num)))
-# print(result)
+from functools import reduce
+num = [1,2,3,4,5,6,7,8,90,10]
+result = reduce(lambda x,y : x+y,filter(lambda x : x % 5 == 0,map(lambda x : x * 7,num)))
+print(result)
 
 
 
