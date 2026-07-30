@@ -15,3 +15,6 @@ c1 = Cart()
 c1+"chips"+"Milkshake"+"Thumpsup"+"Tomato"
 c1-"Laptop"-"chips"-"mobile"-"Tomato"
 print(c1)
+
+
+
