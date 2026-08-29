@@ -44,3 +44,16 @@
 # l = [5, 10, 15, 20, 25, 30]
 # k = reduce(lambda x,y:x+y,filter(lambda x:x % 5 == 0,map(lambda x : x**2,l)))
 # print(k)
+
+
+
+#  Given a list:
+# nums = [12, 15, 7, 18, 20, 21, 25]
+# Use filter() and lambda to keep numbers that are divisible by 3 OR divisible by
+# 5 but NOT divisible by both.
+# Explain how the logical condition works.
+
+
+nums = [12,15,7,18,20,21,25]
+k = list(filter(lambda x: (x % 3 == 0) ^ (x % 5 == 0),nums))
+print(k)

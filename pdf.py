@@ -40,7 +40,7 @@
 # print(nums)
 
 
-d = {"apple": 100, "banana": 40, "cherry": 150}
-k = list(filter(lambda x : x>50 ,d.values()))
-print(k)
+# d = {"apple": 100, "banana": 40, "cherry": 150}
+# k = list(filter(lambda x : x>50 ,d.values()))
+# print(k)
 
