@@ -41,4 +41,46 @@
 #      print(x*y)
 # multiply(6,8)
 
+# Write a simple decorator called my_decorator that prints 'Function is starting' before
+# and 'Function is done' after any function it wraps. Apply it to a function greet() that prints
+# 'Hello!'.
+
+
+
+# def my_decorator(fun2):
+#     def inner():
+#         print("Function is starting")
+#         fun2()
+#         print("Function is done")
+#     return inner
+# @my_decorator
+# def greet():
+#     print("hello")
+# greet()
+
+
+
+
+
+
+# Write a decorator called validate_positive that checks all positional arguments passed
+# to a function. If any argument is negative, print an error message and return None without
+# calling the function. Test it on a function multiply(a, b).
+
+
+# def validate_positive(fun2):
+#     def inner(*args):
+#         for num in args:
+#             if num < 0:
+#                 print("Error the number is less than zero")
+#                 return None
+#         return fun2(*args)
+#     return inner
+
+# @validate_positive
+# def multiply(a,b):
+#     return a*b
+# print(multiply(2,3))
+# print(multiply(-2,3))
+
 
