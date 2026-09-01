@@ -4,4 +4,15 @@
 class Animal:
     def make_sound(self):
         print("Sounds")
-class Dog
+class Dog(Animal):
+    def make_sound(self):
+        print("Dog")
+class Cat(Animal):
+    def make_sound(self):
+        print("Cat")
+class Cow(Animal):
+    def make_sound(self):
+        print("Cow")
+l = [Dog(),Cat(),Cow()]
+for i in l:
+    i.make_sound()

@@ -4,6 +4,6 @@ def vowels(n):
     for i in n:
         if i in "aeiou":
             yield i
-n = "pythonprogramming"
-for i in vowels(n):
+k = "pythonprogramming"
+for i in vowels(k):
     print(i)
