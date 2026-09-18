@@ -28,3 +28,13 @@ print(c1.name)
 print(c1.price)
 print(Product.valid(50000))
 Product.change_tax(15)
+
+
+
+
+
+
+
+
+
+
