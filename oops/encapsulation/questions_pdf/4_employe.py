@@ -25,6 +25,3 @@ e = Employee("arjun",25000)
 e.get_salary()
 e.update_salary(45000)
 e.log()
-
-
-    
