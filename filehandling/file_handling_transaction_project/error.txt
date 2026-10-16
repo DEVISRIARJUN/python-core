@@ -1,0 +1,3 @@
+U2,-50,shopping -> Negative amount
+U4,abc,food -> Non-numeric amount
+U7,,travel -> Missing amount

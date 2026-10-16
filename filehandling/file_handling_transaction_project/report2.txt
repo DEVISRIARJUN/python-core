@@ -1,0 +1,8 @@
+total records: 26
+valid records: 5
+invalid records: 21
+total revenue: 1170
+food:220
+travel:200
+shopping:300
+electronics:450
