@@ -10,4 +10,4 @@ l = LoginSystem()
 try:
     l.login("6789")
 except Exception as e:
-    print(e)
+    print("Error caught :",e)

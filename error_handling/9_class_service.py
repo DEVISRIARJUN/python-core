@@ -10,6 +10,10 @@ class Service:
         except Exception:
             raise Exception("By using the exception the error is handled")
     def m2(self):
-        raise Exception("Calling the another method raises an Exception")
+        print("Calling the another method raises an Exception")
 s = Service()
-s.m1()
+s.m2()
+
+
+
+
